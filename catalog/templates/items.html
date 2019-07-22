@@ -1,0 +1,52 @@
+{% extends "layout.html" %} {% block title %}{{ category.name }}{% endblock %}
+{% block content %}
+<div class="container">
+  {% if items|length == 0 %}
+  <h1>{{ category.name }} <br /><small class="text-muted">(0 vehicles)</small></h1>
+  {% else %} {% if items|length > 1 %}
+  <h1>
+    {{ category.name }} <br /><small class="text-muted">({{ items | length }} vehicles)</small>
+  </h1>
+  {% else %}
+  <h1>{{ category.name }} <br /><small class="text-muted">(1 vehicle)</small></h1>
+  {% endif %} {% endif %} {% include "add_item_button.html" %}
+  <div class="container">
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          {% for item in items %}
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+             
+              {% if item.image_url != none %}
+              <img
+                class="card-img-top"
+                src="{{ item.image_url }}"                
+              />
+              {% else %}
+              <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png" />
+              {% endif %}
+              <div class="card-body">
+                <p class="card-text">{{ item.name }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      class="btn btn-sm btn-outline-secondary"
+                      href="{{ url_for('show_item', category_name=category.name, item_name=item.name) }}"
+                      role="button"
+                      >Details</a
+                    >
+                  </div>
+                  <small class="text-muted">{{ category.name }}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

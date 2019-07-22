@@ -1,0 +1,7 @@
+{% if 'username' in session %}
+<div class="container">
+  <a class="btn btn-primary" href="{{ url_for('create_item') }}" role="button"
+    >New vehicle</a
+  >
+</div>
+{% endif %}

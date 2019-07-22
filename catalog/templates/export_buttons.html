@@ -1,0 +1,6 @@
+{% if 'username' in session %}
+<div class="container">
+  <a class="btn btn-info btn-sm" href="{{ url_for('items_xml') }}" role="button">Export XML</a>
+  <a class="btn btn-info btn-sm" href="{{ url_for('items_json') }}" role="button">Export JSON</a>
+</div><br />
+{% endif %}
