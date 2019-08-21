@@ -4,8 +4,8 @@ __pycache__
 .vscode
 itemcatalog.db
 *~
-venv/
-venv2/
-venv3/
+venv*
+venv3-not-ok-here/
+venv2
 *-orig*
 *client_secrets*

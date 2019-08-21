@@ -5,5 +5,7 @@ __pycache__
 itemcatalog.db
 *~
 venv*
+venv3-not-ok-here
+venv2
 *-orig*
 *client_secrets*
