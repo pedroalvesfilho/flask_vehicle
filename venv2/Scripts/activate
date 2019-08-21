@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'C:\Users\pedro\Documents\cloud-mega\udacity-opportunities\udacity-fsnd-project-item-catalog-conf-1915703-190721\vagrant\catalog\venv2'; else echo '/C/Users/pedro/Documents/cloud-mega/udacity-opportunities/udacity-fsnd-project-item-catalog-conf-1915703-190721/vagrant/catalog/venv2'; fi;)"
+VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'C:\Users\pedro\Documents\cloud-mega\udacity-opportunities\item-catalog-vehicles-conf-1915703-190721-ok\vagrant\flask_vehicle\venv2'; else echo '/C/Users/pedro/Documents/cloud-mega/udacity-opportunities/item-catalog-vehicles-conf-1915703-190721-ok/vagrant/flask_vehicle/venv2'; fi;)"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\pedro\Documents\cloud-mega\udacity-opportunities\udacity-fsnd-project-item-catalog-conf-1915703-190721\vagrant\catalog\venv2"
+set "VIRTUAL_ENV=C:\Users\pedro\Documents\cloud-mega\udacity-opportunities\item-catalog-vehicles-conf-1915703-190721-ok\vagrant\flask_vehicle\venv2"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

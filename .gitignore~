@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+.vagrant
+.vscode
+itemcatalog.db
+*"
+venv
+venv2
+venv3
+*-orig*
