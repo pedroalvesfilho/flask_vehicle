@@ -24,6 +24,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/pedroalvesfilho/flask_vehicle.git
 git push -u origin master
 --
+git add --all
 git commit -m "2019-08-21 20:00"
 git push origin master
   

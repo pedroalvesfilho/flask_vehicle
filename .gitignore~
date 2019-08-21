@@ -3,8 +3,9 @@ __pycache__
 .vagrant
 .vscode
 itemcatalog.db
-*"
-venv
-venv2
-venv3
+*~
+venv/
+venv2/
+venv3/
 *-orig*
+*client_secrets*
