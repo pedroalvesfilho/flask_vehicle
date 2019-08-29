@@ -238,7 +238,7 @@ def populate():
 
     session.close()
 
-    print "Populated database with some rows..."
+    print("Populated database with some rows...")
 
 
 if __name__ == '__main__':

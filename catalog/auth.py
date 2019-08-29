@@ -19,8 +19,12 @@ from catalog.connect_to_database import connect_to_database
 def show_login():
     """Show the login screen to the user."""
     # Create a state token to prevent request forgery.
+    # You are trying to run a Python 2 codebase with Python 3. xrange() was renamed to range() in Python 3
+    # https://stackoverflow.com/questions/17192158/nameerror-global-name-xrange-is-not-defined-in-python-3
+    # state = ''.join(random.choice(string.ascii_uppercase + string.digits)
+    #                for x in xrange(32))
     state = ''.join(random.choice(string.ascii_uppercase + string.digits)
-                    for x in xrange(32))
+                    for x in range(32))
     login_session['state'] = state
 
     session = connect_to_database()
@@ -79,7 +83,7 @@ def gconnect():
     if result['issued_to'] != g_client_id:
         response = make_response(
             json.dumps("Token's client ID doesn't match app's."), 401)
-        print "Token's client ID doesn't match app's."
+        print("Token's client ID doesn't match app's.")
         response.headers['Content-Type'] = 'application/json'
         return response
 
@@ -122,7 +126,7 @@ def gconnect():
     output += ' " style="width: 300px; height: 300px; border-radius: 150px;'
     output += '-webkit-border-radius: 150px;-moz-border-radius: 150px;"> '
     flash("You are now logged in as %s" % login_session['username'])
-    print "done!"
+    print("done!")
     return output
 
 
