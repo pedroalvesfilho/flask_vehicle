@@ -13,10 +13,12 @@ https://github.com/pedroalvesfilho/flask_vehicle.git
 
 1. [Create New Repository](https://help.github.com/en/articles/creating-a-new-repository) 
    drop-down: + ***top right corner***
+
 https://github.com/pedroalvesfilho/flask_vehicle.git
 
 ### From github
-…or create a new repository on the command line
+```
+… or create a new repository on the command line
 echo "# flask_vehicle" >> README.md
 git init
 git add README.md
@@ -134,3 +136,4 @@ Database file created...
 Populated database with some rows...
 (venv2) flask_vehicle $
 ----
+```
