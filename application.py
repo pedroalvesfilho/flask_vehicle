@@ -6,6 +6,13 @@ from catalog import app
 from catalog.database_setup import create_db
 from catalog.populate_db import populate
 
+"""
+When you start your app by running `flask run`
+the `if __name__ == '__main__':` block gets skipped.
+If you don't want to skip it, run with `python <script.py>`.
+"""
+
+ 
 if __name__ == '__main__':
     # App configuration
     app.config['DATABASE_URL'] = 'sqlite:///itemcatalog.db'

@@ -71,9 +71,7 @@ $ git remote -v
 $ git push origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 
-
 ---
-
 
 Create database on PostgreSQL:
 
@@ -97,8 +95,14 @@ catalog=#
 catalog=# GRANT ALL ON SCHEMA public TO pedro;
 GRANT
 --------------------
+```
 
 ### Running the app:
+```
+When you start your app by running `flask run`
+the `if __name__ == '__main__':` block gets skipped.
+If you don't want to skip it, run with `python <script.py>`.
+
 
 flask_vehicle $ . venv2/Scripts/activate
 (venv2) flask_vehicle $
